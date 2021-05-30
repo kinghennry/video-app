@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+/* general styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin:0 auto;
+  max-width:60rem; 
+  width: 100%;
+}
+body{
+  font-family: 'Nunito Sans',sans-serif;
+  background-color: #0d1117;
+  color: white;
+}
+
+input,button {
+  font-family: inherit !important;
+  outline-width: 0;
+}
+/* nav */
+nav{
+  background-color:#161b22;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+}
+/* end of nav styles */
+
+/* video player */
+video {
+  width: 100%;
+  display: block;
+}
+.video__container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+.video__box{
+  border: 3px solid gray;
+  border-radius: 20px;
+  width: 550px;
+  position: relative;
+  margin-right: 20px;
+}
+.video__box h4 {
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.219);
+  border:thin solid white;
+  position: absolute;
+  right: 4%; 
+  bottom: 5%;
+  padding: 7px 14px;
+  border-radius: 10px;
+}
+/* end of video styles */
+
+/* live  button */
+.video__live{
+  background-color: red !important;
+  color: white !important;
+  margin-left: 20px !important; 
+  margin-top: 20px !important;
+  font-family: inherit !important;
+  /* max-width: 30rem !important; */
+}
+.video__liveIcon{
+  margin-left: .3rem;
+  font-size: 1.4rem;
+}
+/* form styles */
+form{
+  background-color: white;
+  color: black;
+  display: flex;
+  padding:  20px ;
+  border-radius: 12px;
+  max-width: 50rem;
+  margin: 22px auto;
+  position: relative;
+}
+.form__input{
+  border: 1px solid black;
+  padding: 7px 14px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form__input input{
+  border: none;
+  flex: 1;
+}
+.form__wrapper{
+  flex: 2;
+  margin-left: 10px;
+  margin-bottom:40px;
+}
+.form__wrapper h4 {
+  margin-bottom: 20px;
+}
+
+.form__wrapper button {
+  margin-bottom: 20px;
+}
+
+.copy__button{
+  font-weight: 600 !important;
+  font-size: .8rem !important;
+  background-color: #0d1117 !important;
+  color: white !important;
+} 
+.copy__icon{
+  font-size: 1rem !important;
+  margin-left: .5rem;
+}
+/* end of form styles */
+
+/* notification */
+.notifications{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -4%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+.notifications h2 {
+  margin-right: 10px;
+}
+/* end of notifications */
+
+/* media queries */
+@media (max-width:568px){
+  
+  .video__box{
+    width: 350px;
+    margin: 10px 0;
+    margin-right: 0px;
+  }
+  .video__live{
+    margin-left: 30px !important;
+  }
+  .video__container{
+    flex-direction: column;
+  }
+  .form__wrapper {   
+    margin-bottom: 0px;
+  }
+  form{
+    flex-direction: column;
+    margin: 22px;
+  }
+  .notifications{
+      display: block;
+      margin-left: 10px;
+      position: inherit;
+  }
+  .notifications h2 {
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width:328px){
+
+  .video__box{
+    width: 270px;
+  }
+
+  .video__box h4 {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+}
+
