@@ -14,6 +14,8 @@ const VideoPlayer = () => {
                          <AiOutlineEye className="video__liveIcon" />
                     </Button>
                 )}
+                
+            
                 <div className="video__container">
                  {stream && (
                     <div className="video__box">
